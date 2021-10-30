@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Planning FTW</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,9 +16,403 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+				<section data-background-image="img/blueprint-background.jpg">
+					<h1>Planning FTW</h1>
+
+					<h2>Blueprinting successful projects</h2>
+
+					<p>Tomislav Buljević</p>
+
+					<p><a href="https://twitter.com/tomebuljevic" target="_blank">@tomebuljevic</a></p>
+				</section>
+
+				<section data-background-image="img/blueprint-background.jpg">
+
+					<section>
+						<h3>About me</h3>
+
+						<ul>
+							<li class="fragment fade">Senior backend developer @ <a href="https://www.trikoder.net/" target="_blank">Trikoder</a></li>
+							<li class="fragment fade">11+ years in development</li>
+							<li class="fragment fade">loads of projects</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Preconceived notions</h3>
+
+						<ul>
+							<li class="fragment fade">tell a computer what to do</li>
+							<li class="fragment fade">get paid for it</li>
+						</ul>
+
+						<aside class="notes">
+							When starting my career as a developer, I always assumed my job would be simple. I'd tell a computer what to do and it would do it.
+							Then I would get paid for it. So great success!
+						</aside>
+					</section>
+
+					<section>
+						<h3>Reality is a bit different</h3>
+
+						<ul>
+							<li class="fragment fade">serious, complex, projects mean collaboration</li>
+							<li class="fragment fade">teamwork is nothing without a plan</li>
+							<li class="fragment fade">nobody talks about deadlines and budget when you start off</li>
+						</ul>
+
+						<aside class="notes">
+							After all, why should they? It's not like you're in it to make money. ;)
+						</aside>
+					</section>
+
+					<section>
+						<h3>A developers path</h3>
+
+						<ul>
+							<li class="fragment fade">Junior: Work on tasks, try your best to advance your knowledge</li>
+							<li class="fragment fade">Mid: Work on tasks, try your best to advance your knowledge</li>
+							<li class="fragment fade">Senior:
+								<ul>
+									<li class="fragment fade">plan the architecture</li>
+									<li class="fragment fade">organize the team</li>
+									<li class="fragment fade">work on cohesion and communication</li>
+									<li class="fragment fade">...</li>
+								</ul>
+							</li>
+						</ul>
+
+						<aside class="notes">
+							Becoming a senior without proper preparation beforehand might seem a bit overwhelming,
+							but with proper mentoring you can harness the knowledge of those that come before you.
+							So, let's start with the concept of data modelling.
+						</aside>
+					</section>
+				</section>
+
+				<section data-background-image="img/whiteboard.jpg">
+					<section>
+						<h2>Data modelling</h2>
+					</section>
+					<section>
+						<p>Process of creating a model of data used in an application.</p>
+
+						<ul>
+							<li class="fragment fade">objects (entities, resources, attributes, etc.)</li>
+							<li class="fragment fade">their relationships</li>
+							<li class="fragment fade">rules</li>
+						</ul>
+
+						<aside class="notes">
+							When creating a model of data, we need to pay attention to data objects, their relationships
+							and the rules which guide those relationships.
+						</aside>
+					</section>
+					<section>
+						<h3>Problems surrounding data modelling?</h3>
+
+						<ul>
+							<li class="fragment fade">often overlooked</li>
+							<li class="fragment fade">grows organically</li>
+							<li class="fragment fade">mistakes cost A LOT</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Aren't you just talking about... documentation?</h3>
+
+						<p class="fragment fade">Documentation can only get you so far.</p>
+
+						<ul>
+							<li class="fragment fade">visual representation of a model</li>
+							<li class="fragment fade">rules which determine the modularity of the model</li>
+							<li class="fragment fade">specific use cases</li>
+						</ul>
+
+						<aside class="notes">
+							Documentation you get from the business side represents their view of the project and UX.
+
+							It knows what the outcome is, but not how it will look on your system.
+						</aside>
+					</section>
+					<section>
+						<h3>The process is not the same for everyone</h3>
+
+						<p class="fragment fade">There are some basic principles which one can use.</p>
+
+						<ul>
+							<li class="fragment fade">behaviour</li>
+							<li class="fragment fade">storage model</li>
+						</ul>
+
+						<aside class="notes">
+							Planning a project is not a simple thing. The solutions I'm going to present are not a silver bullet.
+
+							Dumbing it down to behaviour and storage model only seems very counter-productive, but when you think about it,
+							the application is just that. It behaves a certain way, and it stores data.
+						</aside>
+					</section>
+					<section>
+						<h3>Basis of the tech stack in <a href="https://www.trikoder.net/" target="_blank">Trikoder</a></h3>
+
+						<ul>
+							<li class="fragment fade">PHP; Symfony</li>
+							<li class="fragment fade">layered architecture</li>
+							<li class="fragment fade">DDD-ish</li>
+							<li class="fragment fade">JSON API</li>
+							<li class="fragment fade">relational database</li>
+						</ul>
+
+						<aside class="notes">
+							With all this in mind, the planning of a single project can be broken down into chunks we use to
+							plan new features for a single product we are developing. This is the way we do things which we reached using trial and error,
+							but ultimately, it works for us.
+						</aside>
+					</section>
+				</section>
+				<section data-background-image="img/levels.jpg">
+					<section>
+						<h3>Several levels of the process</h3>
+
+						<ul>
+							<li class="fragment fade">Conceptual</li>
+							<li class="fragment fade">Logical</li>
+							<li class="fragment fade">Physical</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Conceptual</h4>
+
+						<ul>
+							<li class="fragment fade">business side of the project</li>
+							<li class="fragment fade">received through the documentation</li>
+							<li class="fragment fade">system and database agnostic</li>
+							<li class="fragment fade">data as the user will see it</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Logical</h4>
+
+						<ul>
+							<li class="fragment fade">development side of the project</li>
+							<li class="fragment fade">defines the logical relationships of the data objects</li>
+							<li class="fragment fade">database agnostic</li>
+							<li class="fragment fade">data as the developer will see it</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Physical</h4>
+
+						<ul>
+							<li class="fragment fade">development side of the project</li>
+							<li class="fragment fade">defines the relationships of the data objects in the database (primary keys, functions, views, etc.)</li>
+							<li class="fragment fade">data as the system will see it</li>
+							<li class="fragment fade">depends on the implementation system</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background-image="img/logical.jpg">
+					<section>
+						<h3>How to begin?</h3>
+
+						<ul>
+							<li class="fragment fade">take a look at the conceptual side of things</li>
+							<li class="fragment fade">extract the most important data objects</li>
+							<li class="fragment fade">object variability (conceptually, what influences the object most?)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>What to take into consideration</h3>
+
+						<ul>
+							<li class="fragment fade">structure and hierarchy of the data</li>
+							<li class="fragment fade">how a single data object affects others</li>
+							<li class="fragment fade">how much of it is of use to a user</li>
+						</ul>
+
+						<aside class="notes">
+							Every single app is basically created in the same way. The data is not a flat plane, with all the objects
+							being of the same importance. It has a hierarchy and we need to determine it here. Also, objects have their
+							lifecycle and they interact with one another. Finally, you can create a perfect model, but if a user has no
+							practical use of all the data you store, then it has all been for nothing.
+						</aside>
+					</section>
+					<section>
+						<h3>What should we pay attention to</h3>
+
+						<ul>
+							<li class="fragment fade">How do we extract data?</li>
+							<li class="fragment fade">What's the frequency of writing?</li>
+							<li class="fragment fade">In what way will the data enter our model?</li>
+							<li class="fragment fade">Which groups of data are shown on a single screen?</li>
+						</ul>
+
+						<aside class="notes">
+							Considering data fetching helps sytem optimization in the future. Of course, you won't know exactly how the system
+							will grow, but there are certain things we can always consider.<br>
+							One important question is the frequency of entering certain data into the database. Usually, the objects which are created
+							and updated more frequently, represent the most important parts of the project.<br>
+							Also, we need to ask ourselves if input is based on user through some sort of a form, data import using a script,
+							webhooks, calculations, or something else?<br>
+							Most of the time, but not all of it, groups of data on a screen are objects with direct codependencies.
+						</aside>
+					</section>
+					<section>
+						<h3>How to avoid common pitfalls</h3>
+
+						<ul>
+							<li class="fragment fade">try to make your data chunks small(ish)</li>
+							<li class="fragment fade">the more chunks, the merrier</li>
+							<li class="fragment fade">revise the relationships between data objects</li>
+						</ul>
+
+						<aside class="notes">
+							Data objects are, when used in a giant platform, almost living, breathing things, subject to change.
+							When designing one such object, one should ask themselves: What is the absolute minimum of data I need to store in that object?<br>
+							<br>
+							I'm not saying you should make a data object out of every single particle in your system, but chunkizing content into smaller
+							pieces actually helps you make the system more modular.<br>
+							<br>
+							One should not only look at the relationship and follow a pattern. Instead, one should also consider the context of said relationship
+							and how it affects the overall project. Example: One-to-Many vs. Many-to-One.
+						</aside>
+					</section>
+				</section>
+
+				<section data-background-image="img/logical.jpg">
+					<section>
+						<h3>Planning process</h3>
+
+						<ul>
+							<li class="fragment fade">1 to 2 sprints for planning a project (based on the magnitude of the project)</li>
+							<li class="fragment fade">treat every single layer as stand-alone</li>
+							<li class="fragment fade">determine what is MVP, what is future-proof</li>
+						</ul>
+
+						<aside class="notes">
+							I'm aware of budgetary constraints. Usually, 1 to 2 sprints is time you just don't have. But the planning is so important, imo, that
+							the time you spend on it actually makes the whole development process faster.
+							<br>
+							Treating every single layer as stand-alone has important benefits. Mainly, it decouples your application and makes the process of e.g. switching technologies much less painful in the long run.<br>
+							<br>
+							You need to know when to stop, essentially. When is the planning good enough for your particular project?
+						</aside>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment fade">Domain</li>
+							<li class="fragment fade">Storage</li>
+							<li class="fragment fade">API</li>
+						</ul>
+
+						<aside class="notes">
+							Domain represents the business model. It defines what your system can do, what triggers can happen, and what the outcome of each user path will be.
+							<br>
+							Storage represents the database. I posit that it is of equal importance as the domain, since over here, you determine what will be stored and how the data will be affected by the domain.
+							<br>
+							API is actually a definition of all the access points the system has, so it's not only limited to user interaction.
+						</aside>
+					</section>
+				</section>
+
+				<section data-background-image="img/logical.jpg">
+					<section>
+						<h3>Planning the Domain</h3>
+					</section>
+					<section>
+						<p>Several different terms we use:</p>
+						<ul>
+							<li class="fragment fade">Domain context</li>
+							<li class="fragment fade">Domain event</li>
+							<li class="fragment fade">Trigger</li>
+							<li class="fragment fade">Action</li>
+							<li class="fragment fade">Black box</li>
+						</ul>
+
+						<aside class="notes">
+							Domain context is, simply put, a part of a process which has it's beginning, middle and end.
+							<br>
+							Domain event is a "checkpoint" which determines a certain process state.
+							<br>
+							Trigger starts an action which leads to the next domain event
+							<br>
+							Action is a path from a trigger to a domain event
+							<br>
+							Black box is a third party (other API, another domain, an outside service, etc.)
+						</aside>
+					</section>
+					<section>
+						<p>Important guidelines</p>
+						<ul>
+							<li class="fragment fade">planned for MVP</li>
+							<li class="fragment fade">the less domain logic, the better</li>
+							<li class="fragment fade">no edge cases</li>
+							<li class="fragment fade">high overview</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/shopdomain.png" class="stretch" />
+					</section>
+				</section>
+
+				<section data-background-image="img/blueprint-background.jpg">
+					<section>
+						<h3>Important guidelines</h3>
+
+						<ul>
+							<li class="fragment fade-down">watch out for relations</li>
+							<li class="fragment fade-down">be precise and concise</li>
+							<li class="fragment fade-down">always question the variability of objects</li>
+							<li class="fragment fade-down">make it modular</li>
+						</ul>
+
+						<aside class="notes">
+							Relations are everything. The way the entities are related to one another will definitely influence them in ways you cannot even imagine.<br>
+							You really only need to put in the bare minimum into a single entity. If a field in an entity is mutable based on external factors, it's probably better to add a new entity.<br>
+							This is directly linked to the two points mentioned above because objects influence others, and you always want to lower interference as much as possible.<br>
+							If you follow the three points mentioned above, your system will be modular enough for adding new features and possibly turning them off as necessary.
+						</aside>
+					</section>
+					<section>
+						<h3>Important guidelines</h3>
+
+						<ul>
+							<li class="fragment fade-down">after you create a data model, review it... possibly with a peer</li>
+							<li class="fragment fade-down">if possible, draw conclusions from historical data - it will make your life easier</li>
+							<li class="fragment fade-down">each time you add a new feature, revisit your model</li>
+							<li class="fragment fade-down">you gotta know when to hold 'em and when to fold 'em</li>
+						</ul>
+
+						<aside class="notes">
+							Two pairs of eyes are always better than one. It's always good to get a fresh perspective on things when talking with a peer.<br>
+							Basically, if a value changed in the past, there's a high possibility of change in the future.<br>
+							When you get a request for a new feature, you'll need to see how it fits into your model and if a refactor is necessary. But this is a good thing since it lowers your technical debt.<br>
+							You can go overboard with granulation of the model. In fact, you probably will at some point. As your experience grows, you'll be able to more accurately pin point the level of granulation needed.
+						</aside>
+					</section>
+					<section>
+						<h3>General conclusions</h3>
+
+						<blockquote>
+							"The only constant in life is change"<br>
+
+							-- Heraclitus
+						</blockquote>
+						<ul>
+							<li class="fragment fade-down">your model is not set in stone - it will change over time</li>
+							<li class="fragment fade-down">development is a lot easier and faster with a handy data model</li>
+							<li class="fragment fade-down">try not to abuse the model too much</li>
+							<li class="fragment fade-down">think of the future while paying your respect to the past</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background-image="img/blueprint-background.jpg">
+					<section><h3>Questions?</h3></section>
+					<section>
+						<h3>Thank you</h3>
+
+						<small>*images courtesy of <a href="http://unsplash.com">Unsplash</a> and <a href="http://pexels.com">Pexels</a></small>
+					</section>
+				</section>
 		</div>
 
 		<script src="dist/reveal.js"></script>

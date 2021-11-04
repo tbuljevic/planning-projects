@@ -26,7 +26,7 @@
 					<p><a href="https://twitter.com/tomebuljevic" target="_blank">@tomebuljevic</a></p>
 				</section>
 
-				<section data-background-image="img/blueprint-background.jpg">
+				<section data-background-image="img/circular.jpg">
 
 					<section>
 						<h3>About me</h3>
@@ -160,6 +160,8 @@
 							<li class="fragment fade">DDD-ish</li>
 							<li class="fragment fade">JSON API</li>
 							<li class="fragment fade">relational database</li>
+							<li class="fragment fade">Redis</li>
+							<li class="fragment fade">Elastic</li>
 						</ul>
 
 						<aside class="notes">
@@ -278,7 +280,7 @@
 					</section>
 				</section>
 
-				<section data-background-image="img/logical.jpg">
+				<section data-background-image="img/lightbulb.jpg">
 					<section>
 						<h3>Planning process</h3>
 
@@ -314,7 +316,7 @@
 					</section>
 				</section>
 
-				<section data-background-image="img/logical.jpg">
+				<section data-background-image="img/clear.jpg">
 					<section>
 						<h3>Planning the Domain</h3>
 					</section>
@@ -344,8 +346,8 @@
 						<p>Important guidelines</p>
 						<ul>
 							<li class="fragment fade">planned for MVP</li>
-							<li class="fragment fade">the less domain logic, the better</li>
-							<li class="fragment fade">no edge cases</li>
+							<li class="fragment fade">cover only the business requirements with logic, no more, no less</li>
+							<li class="fragment fade">edge cases are low priority</li>
 							<li class="fragment fade">high overview</li>
 						</ul>
 					</section>
@@ -359,7 +361,7 @@
 					</section>
 				</section>
 
-				<section data-background-image="img/logical.jpg">
+				<section data-background-image="img/database.jpg">
 					<section>
 						<h3>Planning the Database</h3>
 					</section>
@@ -382,11 +384,32 @@
 					<section>
 						<img src="img/shopdatabase.png" class="stretch" />
 					</section>
+					<section>
+						<img src="img/placeInCartDB.png" class="stretch" />
+					</section>
+				</section>
+
+				<section data-background-image="img/cobweb-blue.jpg">
+					<section>
+						<h3>Planning the API</h3>
+					</section>
+					<section>
+						<p>Important guidelines</p>
+						<ul>
+							<li class="fragment fade">planned for MVP</li>
+							<li class="fragment fade">depends on the design</li>
+							<li class="fragment fade-down">collaboration with the consumer of the API is important (front-end or mobile)</li>
+							<li class="fragment fade-down">determine the relationships with other API resources</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/CartAPIEndpointDoc.png" class="stretch" />
+					</section>
 				</section>
 
 				<section data-background-image="img/blueprint-background.jpg">
 					<section>
-						<h3>Important guidelines</h3>
+						<h3>General conclusions</h3>
 
 						<ul>
 							<li class="fragment fade-down">after you create a data model, review it... possibly with a peer</li>
@@ -403,8 +426,6 @@
 						</aside>
 					</section>
 					<section>
-						<h3>General conclusions</h3>
-
 						<blockquote>
 							"The only constant in life is change"<br>
 

@@ -29,325 +29,338 @@
 				<section data-background-image="img/circular.jpg">
 
 					<section>
-						<h3>About me</h3>
+						<h3>O meni</h3>
 
 						<ul>
 							<li class="fragment fade">Senior backend developer @ <a href="https://www.trikoder.net/" target="_blank">Trikoder</a></li>
-							<li class="fragment fade">11+ years in development</li>
-							<li class="fragment fade">loads of projects</li>
+							<li class="fragment fade">11+ godina u developmentu</li>
+							<li class="fragment fade">radio na različitim platformama i arhitekturama</li>
 						</ul>
 					</section>
 
 					<section>
-						<h3>Preconceived notions</h3>
+						<h3>Početne pretpostavke</h3>
 
 						<ul>
-							<li class="fragment fade">tell a computer what to do</li>
-							<li class="fragment fade">get paid for it</li>
+							<li class="fragment fade">reći računalu što da radi</li>
+							<li class="fragment fade">biti plaćen za to</li>
 						</ul>
 
 						<aside class="notes">
-							When starting my career as a developer, I always assumed my job would be simple. I'd tell a computer what to do and it would do it.
-							Then I would get paid for it. So great success!
+							Kad sam započinjao svoju karijeru, pretpostavljao sam da će mi posao biti jednostavan. Reći ću računalu što da radi i ono će to učiniti.
+							Tad će me netko platiti za to. Veliki uspjeh!
 						</aside>
 					</section>
 
 					<section>
-						<h3>Reality is a bit different</h3>
+						<h3>Stvarnost je ipak malo drugačija</h3>
 
 						<ul>
-							<li class="fragment fade">serious, complex, projects mean collaboration</li>
-							<li class="fragment fade">teamwork is nothing without a plan</li>
-							<li class="fragment fade">nobody talks about deadlines and budget when you start off</li>
+							<li class="fragment fade">ozbiljni, kompleksni projekti znače suradnju</li>
+							<li class="fragment fade">timski rad nije ništa bez plana</li>
+							<li class="fragment fade">kad započinješ, nitko ne govori o rokovima i budžetu</li>
 						</ul>
 
 						<aside class="notes">
-							After all, why should they? It's not like you're in it to make money. ;)
+							Na kraju krajeva, zašto bi itko i govorio o tome? Nije kao da si u ovom poslu da bi zaradio. ;)
 						</aside>
 					</section>
 
 					<section>
-						<h3>A developers path</h3>
+						<h3>Developerski put</h3>
 
 						<ul>
-							<li class="fragment fade">Junior: Work on tasks, try your best to advance your knowledge</li>
-							<li class="fragment fade">Mid: Work on tasks, try your best to advance your knowledge</li>
+							<li class="fragment fade">Junior: Rad na zadacima, pokušati naučiti što više</li>
+							<li class="fragment fade">Mid: Rad na zadacima, pokušati naučiti što više</li>
 							<li class="fragment fade">Senior:
 								<ul>
-									<li class="fragment fade">plan the architecture</li>
-									<li class="fragment fade">organize the team</li>
-									<li class="fragment fade">work on cohesion and communication</li>
+									<li class="fragment fade">planirati arhitekturu</li>
+									<li class="fragment fade">organizirati tim</li>
+									<li class="fragment fade">raditi na koheziji i komunikaciji</li>
 									<li class="fragment fade">...</li>
 								</ul>
 							</li>
 						</ul>
 
 						<aside class="notes">
-							Becoming a senior without proper preparation beforehand might seem a bit overwhelming,
-							but with proper mentoring you can harness the knowledge of those that come before you.
-							So, let's start with the concept of data modelling.
+							Može biti malo previše stvari postanete li senior bez prethodne pripreme, no ispravnim
+							mentoriranjem se znanje onih koji su tu bili prije vas može provesti u djelo.
+							Pa, počnimo sa konceptom modeliranja podataka.
 						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="img/whiteboard.jpg">
 					<section>
-						<h2>Data modelling</h2>
+						<h2>Modeliranje podataka</h2>
 					</section>
 					<section>
-						<p>Process of creating a model of data used in an application.</p>
+						<p>Proces kreiranja modela podataka koji se koriste u aplikaciji.</p>
 
 						<ul>
-							<li class="fragment fade">objects (entities, resources, attributes, etc.)</li>
-							<li class="fragment fade">their relationships</li>
-							<li class="fragment fade">rules</li>
+							<li class="fragment fade">objekti (entiteti, resursi, atributi, itd.)</li>
+							<li class="fragment fade">njihove veze</li>
+							<li class="fragment fade">pravila</li>
 						</ul>
 
 						<aside class="notes">
-							When creating a model of data, we need to pay attention to data objects, their relationships
-							and the rules which guide those relationships.
+							Prilikom kreiranja modela podataka, trebamo pripaziti na objekte, njihove veze i pravila
+							koja upravljaju tim vezama.
 						</aside>
 					</section>
 					<section>
-						<h3>Problems surrounding data modelling?</h3>
+						<h3>Problemi oko modeliranja podataka?</h3>
 
 						<ul>
-							<li class="fragment fade">often overlooked</li>
-							<li class="fragment fade">grows organically</li>
-							<li class="fragment fade">mistakes cost A LOT</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Aren't you just talking about... documentation?</h3>
-
-						<p class="fragment fade">Documentation can only get you so far.</p>
-
-						<ul>
-							<li class="fragment fade">visual representation of a model</li>
-							<li class="fragment fade">rules which determine the modularity of the model</li>
-							<li class="fragment fade">specific use cases</li>
+							<li class="fragment fade">obično se previdi</li>
+							<li class="fragment fade">model raste organski</li>
+							<li class="fragment fade">greške koštaju PUNO</li>
 						</ul>
 
 						<aside class="notes">
-							Documentation you get from the business side represents their view of the project and UX.
+							Obično developeri, dijelom zbog vremenskih restrikcija, dijelom zbog puke želje da krenu raditi na novom projektu,
+							previde modeliranje podataka kao bitan dio planiranja projekta.
 
-							It knows what the outcome is, but not how it will look on your system.
+							Model tako raste organski, što nikad nije dobro, jer ukoliko pogriješite, uvodite tehnički dug
+							koji se nakon vas treba rješavati i čistiti.
 						</aside>
 					</section>
 					<section>
-						<h3>The process is not the same for everyone</h3>
+						<h3>Ne govorimo li ovdje samo o... dokumentaciji?</h3>
 
-						<p class="fragment fade">There are some basic principles which one can use.</p>
+						<p class="fragment fade">Dokumentacija vam može samo djelomično pomoći.</p>
 
 						<ul>
-							<li class="fragment fade">behaviour</li>
+							<li class="fragment fade">vizualna reprezentacija modela</li>
+							<li class="fragment fade">pravila koja određuju modularnost modela</li>
+							<li class="fragment fade">specifični use case-ovi</li>
+						</ul>
+
+						<aside class="notes">
+							Dokumentacija koju dobijete od businessa predstavlja njihov pogled na projekt i
+							eventualno UX.
+
+							Ona zna što želi postići, ali ne i kako će to izgledati na vašem sustavu.
+						</aside>
+					</section>
+					<section>
+						<h3>Proces nije isti za svakoga</h3>
+
+						<p class="fragment fade">Postoje neki osnovni principi kojih se svi mogu pridržavati</p>
+
+						<ul>
+							<li class="fragment fade">ponašanje</li>
 							<li class="fragment fade">storage model</li>
 						</ul>
 
 						<aside class="notes">
-							Planning a project is not a simple thing. The solutions I'm going to present are not a silver bullet.
+							Planiranje projekta nije jednostavna stvar. Rješenja koja ću predstaviti nisu srebrni metak koji
+							će vam magično riješiti problem.
 
-							Dumbing it down to behaviour and storage model only seems very counter-productive, but when you think about it,
-							the application is just that. It behaves a certain way, and it stores data.
+							Pojednostavljenje svega na ponašanje i storage model izgleda vrlo kontra-produktivno, no kad razmislimo,
+							aplikacija je upravo to. Ponaša se na određeni način, i sprema podatke.
 						</aside>
 					</section>
 					<section>
-						<h3>Basis of the tech stack in <a href="https://www.trikoder.net/" target="_blank">Trikoder</a></h3>
+						<h3>Osnova tech stack-a u <a href="https://www.trikoder.net/" target="_blank">Trikoderu</a></h3>
 
 						<ul>
 							<li class="fragment fade">PHP; Symfony</li>
-							<li class="fragment fade">layered architecture</li>
+							<li class="fragment fade">layered arhitektura</li>
 							<li class="fragment fade">DDD-ish</li>
 							<li class="fragment fade">JSON API</li>
-							<li class="fragment fade">relational database</li>
+							<li class="fragment fade">relacijska baza podataka</li>
 							<li class="fragment fade">Redis</li>
 							<li class="fragment fade">Elastic</li>
 						</ul>
 
 						<aside class="notes">
-							With all this in mind, the planning of a single project can be broken down into chunks we use to
-							plan new features for a single product we are developing. This is the way we do things which we reached using trial and error,
-							but ultimately, it works for us.
+							Imajući sve ovo na umu, planiranje projekta se može razlomiti u dijelove koje koristimo da bismo
+							isplanirali nove feature za jedinstveni proizvod koji razvijamo. Ovo je način do kojeg smo došli
+							metodom pokušaja i pogreške, no, na kraju krajeva, nama radi.
 						</aside>
 					</section>
 				</section>
 				<section data-background-image="img/levels.jpg">
 					<section>
-						<h3>Several levels of the process</h3>
+						<h3>Tri nivoa procesa</h3>
 
 						<ul>
-							<li class="fragment fade">Conceptual</li>
-							<li class="fragment fade">Logical</li>
-							<li class="fragment fade">Physical</li>
+							<li class="fragment fade">Konceptualni</li>
+							<li class="fragment fade">Logički</li>
+							<li class="fragment fade">Fizički</li>
 						</ul>
 					</section>
 					<section>
-						<h4>Conceptual</h4>
+						<h4>Konceptualni nivo</h4>
 
 						<ul>
-							<li class="fragment fade">business side of the project</li>
-							<li class="fragment fade">received through the documentation</li>
-							<li class="fragment fade">system and database agnostic</li>
-							<li class="fragment fade">data as the user will see it</li>
+							<li class="fragment fade">business strana projekta</li>
+							<li class="fragment fade">zaprimamo je kroz dokumentaciju</li>
+							<li class="fragment fade">ne poznaje sutav ni bazu podataka</li>
+							<li class="fragment fade">podaci kako ih vidi korisnik</li>
 						</ul>
 					</section>
 					<section>
-						<h4>Logical</h4>
+						<h4>Logički nivo</h4>
 
 						<ul>
-							<li class="fragment fade">development side of the project</li>
-							<li class="fragment fade">defines the logical relationships of the data objects</li>
-							<li class="fragment fade">database agnostic</li>
-							<li class="fragment fade">data as the developer will see it</li>
+							<li class="fragment fade">development strana projekta</li>
+							<li class="fragment fade">definira logičke veze između podatkovnih objekata</li>
+							<li class="fragment fade">ne poznaje bazu podataka</li>
+							<li class="fragment fade">podatci kako ih vidi developer</li>
 						</ul>
 					</section>
 					<section>
-						<h4>Physical</h4>
+						<h4>Fizički nivo</h4>
 
 						<ul>
-							<li class="fragment fade">development side of the project</li>
-							<li class="fragment fade">defines the relationships of the data objects in the database (primary keys, functions, views, etc.)</li>
-							<li class="fragment fade">data as the system will see it</li>
-							<li class="fragment fade">depends on the implementation system</li>
+							<li class="fragment fade">development strana projekta</li>
+							<li class="fragment fade">definira veze između podatkovnih objekata u bazi podataka (indexi, funkcije, itd.)</li>
+							<li class="fragment fade">podatci kako ih vidi sustav</li>
+							<li class="fragment fade">ovisi o implementaciji</li>
 						</ul>
 					</section>
 				</section>
 				<section data-background-image="img/logical.jpg">
 					<section>
-						<h3>How to begin?</h3>
+						<h3>Kako početi?</h3>
 
 						<ul>
-							<li class="fragment fade">take a look at the conceptual side of things</li>
-							<li class="fragment fade">extract the most important data objects</li>
-							<li class="fragment fade">object variability (conceptually, what influences the object most?)</li>
+							<li class="fragment fade">pogledati konceptualnu stranu</li>
+							<li class="fragment fade">izvući najvažnije podatkovne objekte</li>
+							<li class="fragment fade">varijabilnost objekata (konceptualno, što najviše utječe na objekt?)</li>
 						</ul>
 					</section>
 					<section>
-						<h3>What to take into consideration</h3>
+						<h3>Što uzeti u obzir</h3>
 
 						<ul>
-							<li class="fragment fade">structure and hierarchy of the data</li>
-							<li class="fragment fade">how a single data object affects others</li>
-							<li class="fragment fade">how much of it is of use to a user</li>
+							<li class="fragment fade">struktura i hijerarhija podataka</li>
+							<li class="fragment fade">kako jedan podatkovni objekt utječe na druge</li>
+							<li class="fragment fade">koliko je to sve korisno korisniku</li>
 						</ul>
 
 						<aside class="notes">
-							Every single app is basically created in the same way. The data is not a flat plane, with all the objects
-							being of the same importance. It has a hierarchy and we need to determine it here. Also, objects have their
-							lifecycle and they interact with one another. Finally, you can create a perfect model, but if a user has no
-							practical use of all the data you store, then it has all been for nothing.
+							Svaka se aplikacija u osnovi kreira na isti način. Podatci nisu u ravnini, svi jednako važni.
+							Oni imaju svoju hijerarhiju, i trebamo je odrediti. Također, objekti imaju svoj životni vijek
+							i međusobno komuniciraju. I, na kraju krajeva, možete kreirati savršen model, no ako krajnji
+							korisnik nema praktičnu primjenu svih tih podataka koje ste spremili, onda ste potrošili vrijeme.
 						</aside>
 					</section>
 					<section>
-						<h3>What should we pay attention to</h3>
+						<h3>Na što trebamo paziti</h3>
 
 						<ul>
-							<li class="fragment fade">How do we extract data?</li>
-							<li class="fragment fade">What's the frequency of writing?</li>
-							<li class="fragment fade">In what way will the data enter our model?</li>
-							<li class="fragment fade">Which groups of data are shown on a single screen?</li>
+							<li class="fragment fade">Kako izvlačimo podatke?</li>
+							<li class="fragment fade">Koja je frekvencija zapisa?</li>
+							<li class="fragment fade">Na koji će način podaci ući u naš model?</li>
+							<li class="fragment fade">Koje se grupe podataka prikazuju na jednom ekranu?</li>
 						</ul>
 
 						<aside class="notes">
-							Considering data fetching helps sytem optimization in the future. Of course, you won't know exactly how the system
-							will grow, but there are certain things we can always consider.<br>
-							One important question is the frequency of entering certain data into the database. Usually, the objects which are created
-							and updated more frequently, represent the most important parts of the project.<br>
-							Also, we need to ask ourselves if input is based on user through some sort of a form, data import using a script,
-							webhooks, calculations, or something else?<br>
-							Most of the time, but not all of it, groups of data on a screen are objects with direct codependencies.
+							Uzimanje dohvata podataka u obzir pomaže budućoj optimizaciji sustava. Naravno da nećete znati točno kako
+							će sustav rasti, no postoje određene stvari koje uvijek možemo uzeti u obzir.<br>
+							Jedno bitno pitanje je koliko će se određeni podatci puta zapisivati u bazu. Obično su objekti koji se kreiraju
+							i ažuriraju više od drugih, zapravo najbitniji dijelovi vašeg projekta.<br>
+							Također, trebamo se zapitati ovisi li unos podataka o nekom obrascu za unos, skriptnom importu, webhookovima,
+							kalkulacijama ili nećem drugom?<br>
+							Većinu vremena, no ne uvijek, grupe podataka na ekranu su objekti sa direktnim međuovisnostima.
 						</aside>
 					</section>
 					<section>
-						<h3>How to avoid common pitfalls</h3>
+						<h3>Kako izbjeći najučestalije zamke?</h3>
 
 						<ul>
-							<li class="fragment fade">try to make your data chunks small(ish)</li>
-							<li class="fragment fade">the more chunks, the merrier</li>
-							<li class="fragment fade">revise the relationships between data objects</li>
+							<li class="fragment fade">pokušajte podatke grupirati u (o)manje cjeline</li>
+							<li class="fragment fade">što više malih cjelina ima, to je bolje svima</li>
+							<li class="fragment fade">revidirajte veze između podatkovnih objekata</li>
 						</ul>
 
 						<aside class="notes">
-							Data objects are, when used in a giant platform, almost living, breathing things, subject to change.
-							When designing one such object, one should ask themselves: What is the absolute minimum of data I need to store in that object?<br>
+							Podatkovni objekti su, kad se koriste na velikim platformama, gotovo živuće stvari, podložne promjeni.
+							Kad dizajniramo takav jedan objekt, trebamo se upitati: Koji je apsolutni minimum podataka koje trebam spremiti u taj objekt?<br>
 							<br>
-							I'm not saying you should make a data object out of every single particle in your system, but chunkizing content into smaller
-							pieces actually helps you make the system more modular.<br>
+							Ne kažem da biste trebali od svake čestice u sustavi kreirati jedan objekt, no prebacivanje sadržaja u male djeliće zapravo doprinosi
+							modularnosti vašeg sustava.<br>
 							<br>
-							One should not only look at the relationship and follow a pattern. Instead, one should also consider the context of said relationship
-							and how it affects the overall project. Example: One-to-Many vs. Many-to-One.
+							Ne trebamo samo gledati na veze i pratiti neki predefinirani obrazac. Umjesto toga, treba sagledati i kontekst tih veza i kako on
+							na cjelokupni projekt. Primjer: One-to-Many vs. Many-to-One.
 						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="img/lightbulb.jpg">
 					<section>
-						<h3>Planning process</h3>
+						<h3>Proces planiranja</h3>
 
 						<ul>
-							<li class="fragment fade">1 to 2 sprints for planning a project (based on the magnitude of the project)</li>
-							<li class="fragment fade">treat every single layer as stand-alone</li>
-							<li class="fragment fade">determine what is MVP, what is future-proof</li>
+							<li class="fragment fade">1 do 2 sprinta za planiranje projekta (ovisno o veličini projekta)</li>
+							<li class="fragment fade">svaki sloj se tretira kao zaseban</li>
+							<li class="fragment fade">odrediti što je MVP, a što planirati za budućnost</li>
 						</ul>
 
 						<aside class="notes">
-							I'm aware of budgetary constraints. Usually, 1 to 2 sprints is time you just don't have. But the planning is so important, imo, that
-							the time you spend on it actually makes the whole development process faster.
+							Svjestan sam ograničenja u budžetu. Obično nemate 1 do 2 sprinta. No, po mom je mišljenju planiranje toliko važno, da vrijeme koje
+							utrošite na njega zapravo ubrzava vaš proces razvoja.
 							<br>
-							Treating every single layer as stand-alone has important benefits. Mainly, it decouples your application and makes the process of e.g. switching technologies much less painful in the long run.<br>
+							Zasebno planiranje svakog sloja ima bitne prednosti. Najbitnija je ta da vam aplikaciju decoupla i proces, recimo, prebacivanja na
+							novu tehnologiju, olakšava dugoročno.<br>
 							<br>
-							You need to know when to stop, essentially. When is the planning good enough for your particular project?
+							U biti, treba znati kada stati. Kad smo dovoljno isplanirali projekt?
 						</aside>
 					</section>
 					<section>
+						<h3>Slojevi</h3>
 						<ul>
-							<li class="fragment fade">Domain</li>
+							<li class="fragment fade">Domena</li>
 							<li class="fragment fade">Storage</li>
 							<li class="fragment fade">API</li>
 						</ul>
 
 						<aside class="notes">
-							Domain represents the business model. It defines what your system can do, what triggers can happen, and what the outcome of each user path will be.
+							Domena je poslovni model. Ona definira što vaš sustav može, koji se okidači mogu dogoditi, i što je ishod svakog korisničkog puta.
 							<br>
-							Storage represents the database. I posit that it is of equal importance as the domain, since over here, you determine what will be stored and how the data will be affected by the domain.
+							Storage je baza podataka. Po meni je jednake važnosti kao domena, budući da se ovdje određuje što će se spremiti i kako će na te
+							podatke domena utjecati.
 							<br>
-							API is actually a definition of all the access points the system has, so it's not only limited to user interaction.
+							API je definicija svih pristupnih točaka sustavu, tako da nije ograničena samo na interakciju sa korisnikom.
 						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="img/clear.jpg">
 					<section>
-						<h3>Planning the Domain</h3>
+						<h3>Planiranje Domene</h3>
 					</section>
 					<section>
-						<p>Several different terms we use:</p>
+						<p>Koristimo više različitih termina:</p>
 						<ul>
-							<li class="fragment fade">Domain context</li>
-							<li class="fragment fade">Domain event</li>
-							<li class="fragment fade">Trigger</li>
-							<li class="fragment fade">Action</li>
-							<li class="fragment fade">Black box</li>
+							<li class="fragment fade">Domenski kontekst</li>
+							<li class="fragment fade">Domenski event (događaj)</li>
+							<li class="fragment fade">Trigger (okidač)</li>
+							<li class="fragment fade">Action (akcija)</li>
+							<li class="fragment fade">Crna kutija</li>
 						</ul>
 
 						<aside class="notes">
-							Domain context is, simply put, a part of a process which has it's beginning, middle and end.
+							Vrlo pojednostavljeno, domenski kontekst je dio procesa koji ima početak, sredinu i kraj.
 							<br>
-							Domain event is a "checkpoint" which determines a certain process state.
+							Domenski event je "checkpoint" koji određuje neko stanje u procesu.
 							<br>
-							Trigger starts an action which leads to the next domain event
+							Trigger započinje akciju koja vodi do sljedećeg domenskog eventa.
 							<br>
-							Action is a path from a trigger to a domain event
+							Akcija je put od triggera do domenskog eventa.
 							<br>
-							Black box is a third party (other API, another domain, an outside service, etc.)
+							Crna kutija je treća strana (drugi API, druga domena, vanjski servis, itd.)
 						</aside>
 					</section>
 					<section>
-						<p>Important guidelines</p>
+						<p>Važne smjernice</p>
 						<ul>
-							<li class="fragment fade">planned for MVP</li>
-							<li class="fragment fade">cover only the business requirements with logic, no more, no less</li>
-							<li class="fragment fade">edge cases are low priority</li>
+							<li class="fragment fade">planiramo za MVP</li>
+							<li class="fragment fade">pokrivamo samo potrebe businessa logikom, ne više, ne manje</li>
+							<li class="fragment fade">edge case-ovi su niskog prioriteta</li>
 							<li class="fragment fade">high overview</li>
 						</ul>
 					</section>
@@ -355,30 +368,32 @@
 						<img src="img/shopdomain.png" class="stretch" />
 
 						<aside class="notes">
-							This is a very simplified flow of a basic shop domain. However, it does represent a common enough
-							diagram which we can use for further development.
+							Ovo je vrlo pojednostavljeni flow osnovne domenske logike za neki shop. No predstavlja dovoljno dobar dijagram
+							koji možemo koristiti za daljnji development.
 						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="img/database.jpg">
 					<section>
-						<h3>Planning the Database</h3>
+						<h3>Planiranje baze podataka</h3>
 					</section>
 					<section>
-						<p>Important guidelines</p>
+						<p>Važne smjernice</p>
 						<ul>
-							<li class="fragment fade-down">watch out for relations</li>
-							<li class="fragment fade-down">be precise and concise</li>
-							<li class="fragment fade-down">always question the variability of objects</li>
-							<li class="fragment fade-down">make it modular</li>
+							<li class="fragment fade-down">pazite na relacije</li>
+							<li class="fragment fade-down">budite precizni i koncizni</li>
+							<li class="fragment fade-down">uvijek dovodite u pitanje varijabilnost objekta</li>
+							<li class="fragment fade-down">neka bude modularno</li>
 						</ul>
 
 						<aside class="notes">
-							Relations are everything. The way the entities are related to one another will definitely influence them in ways you cannot even imagine.<br>
-							You really only need to put in the bare minimum into a single entity. If a field in an entity is mutable based on external factors, it's probably better to add a new entity.<br>
-							This is directly linked to the two points mentioned above because objects influence others, and you always want to lower interference as much as possible.<br>
-							If you follow the three points mentioned above, your system will be modular enough for adding new features and possibly turning them off as necessary.
+							Relacije su sve. Entiteti nezamislivo utječu jedni na druge.<br><br>
+							Zapravo u entitet trebate staviti samo apsolutni minimum. Ako se set polja nekog entiteta mijenja ovisno o vanjskim faktorima,
+							možda ih je bolje izdvojiti u zaseban entitet. <br><br>
+							Treća je točka zapravo povezana sa prethodne dvije jer objekti utječu jedni na druge, a uvijek želite smanjiti interferenciju
+							između njih. <br><br>
+							I ako pratite ove tri gornje točke, vaš će sustav biti dovoljno modularan za dodavanje novih featurea i moguće gašenje istih po potrebi.
 						</aside>
 					</section>
 					<section>
@@ -391,86 +406,87 @@
 
 				<section data-background-image="img/cobweb-blue.jpg">
 					<section>
-						<h3>Planning the API</h3>
+						<h3>Planiranje APIja</h3>
 					</section>
 					<section>
-						<p>Important guidelines</p>
+						<p>Važne smjernice</p>
 						<ul>
-							<li class="fragment fade">planned for MVP</li>
-							<li class="fragment fade">depends on the design</li>
-							<li class="fragment fade-down">collaboration with the consumer of the API is important (front-end or mobile)</li>
-							<li class="fragment fade-down">determine the relationships with other API resources</li>
+							<li class="fragment fade">planiramo za MVP</li>
+							<li class="fragment fade">ovisi o dizajnu</li>
+							<li class="fragment fade-down">važna je suradnja sa consumerom API-ja (front-end ili mobile)</li>
+							<li class="fragment fade-down">odrediti veze sa drugim API resursima</li>
 						</ul>
 					</section>
 					<section>
 						<img src="img/CartAPIEndpointDoc.png" class="stretch" />
 
 						<aside class="notes">
-							As I planned the endpoint here, I have thought about the real-life shopping process. So, the cart is actually just a container
-							for the things the user wants to buy. We are not actually modifying the cart in any way whatsoever.<br>
-							Instead, we are adding items to a cart one by one. And it is reflected here.
+							Planirajući ovaj endpoint, razmišljao sam o procesu kupovine iz stvarnog života. Tako da je košarica zapravo samo spremnik
+							za stvari koje korisnik želi kupiti. Mi zapravo samu košaricu ovdje ni na koji način ne mijenjamo. Umjesto toga,
+							dodajemo stavke jednu po jednu u košaricu, i to se ovdje i vidi.
 						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="img/blueprint-background.jpg">
 					<section>
-						<h3>General conclusions</h3>
+						<h3>Zaključci</h3>
 
 						<ul>
-							<li class="fragment fade-down">planning a project depends on the architecture and business needs</li>
-							<li class="fragment fade-down">trial and error</li>
-							<li class="fragment fade-down">shortens development time by a massive amount</li>
+							<li class="fragment fade-down">planiranje projekta ovisi o potrebama arhitekture i businessa</li>
+							<li class="fragment fade-down">pokušaj - pogreška</li>
+							<li class="fragment fade-down">masivno skraćuje vrijeme developmenta</li>
 						</ul>
 
 						<aside class="notes">
-							Planning is a process which is not the same for everyone.<br>
-							In fact, it took us a lot of trial and error to reach this level of planning in our company.<br>
-							But it shaves time off our development process. We are more in tune with the deadlines and less prone to mistakes after streamlining this process.
+							Planiranje je proces koji nije isti za svakoga. Mi smo imali zapravo jako puno pokušaja i pogrešaka
+							u našem procesu planiranja da bismo došli do ovog nivoa planiranja u firmi. I taj proces zapravo usavršavamo
+							cijelo vrijeme. No upravo nam taj proces masivno skraćuje vrijeme za development. Puno smo više u skladu
+							sa svojim rokovima, i puno manje podložni greškama.
 						</aside>
 					</section>
 					<section>
 						<ul>
-							<li class="fragment fade-down">after you create a data model, review it... possibly with a peer</li>
-							<li class="fragment fade-down">if possible, draw conclusions from historical data - it will make your life easier</li>
-							<li class="fragment fade-down">each time you add a new feature, revisit your model</li>
-							<li class="fragment fade-down">your model is not set in stone - it will change over time</li>
+							<li class="fragment fade-down">nakon što kreirate model podataka, revidirajte ga... po mogućnosti sa kolegama</li>
+							<li class="fragment fade-down">ukoliko je moguće, izvlačite zaključke iz povijesnih podataka - olakšat će vam život</li>
+							<li class="fragment fade-down">svaki put kad dodajete novi feature, revidirajte svoj model</li>
+							<li class="fragment fade-down">model vam nije zapisan u kamenu - mijenjat će se tijekom vremena</li>
 
 						</ul>
 
 						<aside class="notes">
-							Two pairs of eyes are always better than one. It's always good to get a fresh perspective on things when talking with a peer.<br>
-							Basically, if a value changed in the past, there's a high possibility of change in the future and you should plan accordingly.<br>
-							When you get a request for a new feature, you'll need to see how it fits into your model and if a refactor is necessary. But this is a good thing since it lowers your technical debt.<br>
-							You shouldn't cling to your model. There is always a high possibility you will need to make significant changes to it even during development. But starting with technical documentation makes it a lot easier to do so.
+							Dva su para očiju uvijek bolja od jednog. Uvijek je dobro dobiti novu perspektivu razgovorom sa kolegama.<br><br>
+							U biti, ako se nešto promijenilo u prošlosti, postoji visoka mogućnost promjene u budućnosti i treba planirati prema tome.<br><br>
+							Kad dobijete zahtjev za novim featureom, trebate vidjeti kako se uklapa u vaš model i je li potreban refaktor. No ovo vam smanjuje tehnički dug.<br><br>
+							Ne trebate se držati modela kao pijan plota. Uvijek postoji visoka mogućnost da ćete ga morati mijenjati čak i prilikom developmenta. No kreiranje ovkve tehničke dokumentacije vam olakšava takve izmjene.
 						</aside>
 					</section>
 					<section>
 						<blockquote>
-							"The only constant in life is change"<br>
+							"U životu samo mijena stalna jest."<br>
 
-							-- Heraclitus
+							-- Heraklit
 						</blockquote>
 						<ul>
-							<li class="fragment fade-down">planning gives you a chance to better optimize your project</li>
-							<li class="fragment fade-down">you gotta know when to hold 'em and when to fold 'em</li>
-							<li class="fragment fade-down">have fun and explore</li>
+							<li class="fragment fade-down">planiranje vam daje šansu bolje optimizacije projekta</li>
+							<li class="fragment fade-down">treba znati kada stati</li>
+							<li class="fragment fade-down">zabavite se i istražujte</li>
 						</ul>
 
 						<aside class="notes">
-							Taking time to consider the intricacies of a single project actually gives you a better understanding of possible pain points and ways to either circumnavigate them or remove them entirely.<br>
-							You can go overboard with granulation of the model. In fact, you probably will at some point. As your experience grows, you'll be able to more accurately pin point the level of granulation needed.<br>
-							Planning a project is a chance not a lot of us are given. Researching different avenues and approaches can give you new perspectives and chances to grow.
+							Uzeti si vremena da naučite sve detalje nekog projekta vam daje bolje razumijevanje mogućih bolnih točaka i načina izbjegavanja ili eliminacije istih.<br><br>
+							Možete pretjerati sa granulacijom modela. Vjerojatno i hoćete u nekom trenutku. Sa iskustvom ćete moći bolje odrediti nivo te granulacije.<br><br>
+							Ne dobijamo svi priliku isplanirati neki projekt. Istraživanje različitih pristupa i aspekata projekta vam može izmijeniti perspektivu i dati priliku za rast.
 						</aside>
 
 					</section>
 				</section>
 				<section data-background-image="img/blueprint-background.jpg">
-					<section><h3>Questions?</h3></section>
+					<section><h3>Pitanja?</h3></section>
 					<section>
-						<h3>Thank you</h3>
+						<h3>Hvala!</h3>
 
-						<small>*images courtesy of <a href="http://unsplash.com">Unsplash</a> and <a href="http://pexels.com">Pexels</a></small>
+						<small>*iskorištene slike sa <a href="http://unsplash.com">Unsplash</a> i <a href="http://pexels.com">Pexels</a></small>
 					</section>
 				</section>
 		</div>

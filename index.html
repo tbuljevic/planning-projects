@@ -197,7 +197,7 @@
 						<ul>
 							<li class="fragment fade">business strana projekta</li>
 							<li class="fragment fade">zaprimamo je kroz dokumentaciju</li>
-							<li class="fragment fade">ne poznaje sutav ni bazu podataka</li>
+							<li class="fragment fade">ne poznaje sustav ni bazu podataka</li>
 							<li class="fragment fade">podaci kako ih vidi korisnik</li>
 						</ul>
 					</section>
@@ -208,7 +208,7 @@
 							<li class="fragment fade">development strana projekta</li>
 							<li class="fragment fade">definira logičke veze između podatkovnih objekata</li>
 							<li class="fragment fade">ne poznaje bazu podataka</li>
-							<li class="fragment fade">podatci kako ih vidi developer</li>
+							<li class="fragment fade">podaci kako ih vidi developer</li>
 						</ul>
 					</section>
 					<section>
@@ -217,7 +217,7 @@
 						<ul>
 							<li class="fragment fade">development strana projekta</li>
 							<li class="fragment fade">definira veze između podatkovnih objekata u bazi podataka (indexi, funkcije, itd.)</li>
-							<li class="fragment fade">podatci kako ih vidi sustav</li>
+							<li class="fragment fade">podaci kako ih vidi sustav</li>
 							<li class="fragment fade">ovisi o implementaciji</li>
 						</ul>
 					</section>
@@ -338,7 +338,6 @@
 						<ul>
 							<li class="fragment fade">Domenski kontekst</li>
 							<li class="fragment fade">Domenski event (događaj)</li>
-							<li class="fragment fade">Trigger (okidač)</li>
 							<li class="fragment fade">Action (akcija)</li>
 							<li class="fragment fade">Crna kutija</li>
 						</ul>
@@ -346,11 +345,9 @@
 						<aside class="notes">
 							Vrlo pojednostavljeno, domenski kontekst je dio procesa koji ima početak, sredinu i kraj.
 							<br>
-							Domenski event je "checkpoint" koji određuje neko stanje u procesu.
+							Domenski event je "checkpoint" koji određuje neko stanje u procesu i ovisno o tom stanju, započinje određenu akciju.
 							<br>
-							Trigger započinje akciju koja vodi do sljedećeg domenskog eventa.
-							<br>
-							Akcija je put od triggera do domenskog eventa.
+							Akcija je ono što nam kod treba učiniti kao posljedica okinutog domenskog eventa.
 							<br>
 							Crna kutija je treća strana (drugi API, druga domena, vanjski servis, itd.)
 						</aside>
@@ -365,11 +362,26 @@
 						</ul>
 					</section>
 					<section>
-						<img src="img/shopdomain.png" class="stretch" />
+						<h3>Cart Domenski kontekst</h3>
+						<img src="img/shopdomain-cart.png" class="stretch" />
 
 						<aside class="notes">
 							Ovo je vrlo pojednostavljeni flow osnovne domenske logike za neki shop. No predstavlja dovoljno dobar dijagram
 							koji možemo koristiti za daljnji development.
+						</aside>
+					</section>
+					<section>
+						<h3>Shipping Domenski kontekst</h3>
+						<img src="img/shopdomain-shipping.png" class="stretch" />
+					</section>
+					<section>
+						<h3>Billing Domenski kontekst</h3>
+						<img src="img/shopdomain-billing.png" class="stretch" />
+
+						<aside class="notes">
+							Kao što vidite, ovim smo high overviewom pokrili gotovo sve što naš shop treba odraditi, a u isto je vrijeme dovoljno čitljivo
+							i ne-tehničkim osobama (business) tako da oni mogu dati svoje komentare i eventualno odobriti cijelu stvar. Također, tu može
+							intervenirati i QA pa dati svoje primjedbe ukoliko ih eventualno ima.
 						</aside>
 					</section>
 				</section>

@@ -373,6 +373,16 @@
 					<section>
 						<h3>Shipping Domenski kontekst</h3>
 						<img src="img/shopdomain-shipping.png" class="stretch" />
+
+						<aside class="notes">
+							Znam što će se mnogi pitati: Zašto ovo sve nije jedan veliki event? Čemu toliko malih koraka do payment gatewaya?<br><br>
+							Poanta je da ovim razbijanjem flowa zapravo imamo višestruku korist:
+							<ul>
+								<li>Ako flow pukne na bilo kojem dijelu, taj dio možemo izolirati i debugirati brže nego da imamo sve u jednom eventu</li>
+								<li>Svaki se korak ovako može logirati radi bolje optimizacije u budućnosti</li>
+								<li>Djelomično planiranje za budućnost, jer business može u jednom trenutku dodati nešto što ide između dva koraka.</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h3>Billing Domenski kontekst</h3>
@@ -381,7 +391,10 @@
 						<aside class="notes">
 							Kao što vidite, ovim smo high overviewom pokrili gotovo sve što naš shop treba odraditi, a u isto je vrijeme dovoljno čitljivo
 							i ne-tehničkim osobama (business) tako da oni mogu dati svoje komentare i eventualno odobriti cijelu stvar. Također, tu može
-							intervenirati i QA pa dati svoje primjedbe ukoliko ih eventualno ima.
+							intervenirati i QA pa dati svoje primjedbe ukoliko ih eventualno ima.<br><br>
+							Također, ovi svi nacrti predstavljaju svojevrsnu tehničku dokumentaciju koja je poprilično future-proof. Budući da će i nakon vas
+							doći netko tko će raditi na tom projektu, i uvoditi nove promjene, ta osoba vrlo lako iz ovakvog dijagrama može izvući sve najbitnije
+							stvari i nadopuniti ga sa nekim dodatnim uvjetima i slično.
 						</aside>
 					</section>
 				</section>
@@ -410,9 +423,22 @@
 					</section>
 					<section>
 						<img src="img/shopdatabase.png" class="stretch" />
+
+						<aside class="notes">
+							Znam da sam tu mogao, recimo, carts tablicu u potpunosti maknuti i uopće je ne koristiti. Odnosno da korisnička košarica ovisi o sessionu.<br><br>
+							Koje su prednosti ovog pristupa naspram sessiona?<br><br>
+							Recimo, jedna od prednosti bi mogla biti multichannel. Ovako smo sigurni da, dok proces ne završi, korisnik ne može imati dvije različite košarice,
+							i s time smo automatski smanjili glavobolje u budućnosti.
+						</aside>
 					</section>
 					<section>
 						<img src="img/placeInCartDB.png" class="stretch" />
+
+						<aside class="notes">
+							Jednako je bitno razraditi i logiku zapisivanja u bazu. Baza podataka ima svoja pravila kojih se trebamo pridržavati, i ukoliko raspišemo nešto slično ovome,
+							sigurniji smo da će se sama aplikacija ponašati bliže onome što želimo.<br><br>
+
+						</aside>
 					</section>
 				</section>
 
